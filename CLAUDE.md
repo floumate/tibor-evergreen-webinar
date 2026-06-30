@@ -118,8 +118,8 @@ Tok: **Stripe New Subscription → Filter (cena) → Code by Zapier (JS) → Gma
 > - **6.2 Mejl/WA tekstovi → verovatno radi DUŠAN** (samo paziti na format linka, vidi 6.2).
 > - **6.3 Hyros parametri → 🔴 PRIORITET** (može biti prvo što se radi).
 > - **6.4 snimka gornji countdown → ✅ ODLUČENO: ističe ISTO kao ponuda (datum+4)**, bez izmene.
-> - **NOVO — VSL videi:** zameniti videe na `/snimka` i `/ponuda` (vturb player ID-evi u
->   `<vturb-smartplayer id="...">` + odgovarajući `players/<ID>/v4/player.js` preload i loader skripta).
+> - **VSL videi → ✅ URAĐENO:** novi vturb ID-evi — `/snimka` = `6a209b0d949993c285f00e80`,
+>   `/ponuda` = `6a22ee6120f013d2b81d85fe` (player tag + preload + loader + m3u8 preload; na snimka i email-gate PLAYER_ID).
 > - **NOVO — „Zajedničko Polijetanje" brzi bonus UKLONJEN** sa `start.html` (frontend, jedini page koji
 >   ga je imao; ostao „AI Zaposlenik (prvih 50)"). ⚠️ **Zapier mejl (BRZI BONUSI sekcija) JOŠ ima taj
 >   bonus — ukloniti i tamo** za konzistentnost (inače fast kupci dobiju mejl sa bonusom kog nema na strani).
