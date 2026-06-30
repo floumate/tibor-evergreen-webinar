@@ -108,6 +108,18 @@ Tok: **Stripe New Subscription → Filter (cena) → Code by Zapier (JS) → Gma
 
 ## 6. 🟡 ŠTA JOŠ TREBA (TODO — sledeća faza, follow-up posle webinara)
 
+> **STATUS UPDATE (30.06.2026):**
+> - **6.1 Make mapiranje datuma → ✅ URAĐENO** (`webinar_date` → custom field `evergreen_webinar_datum`).
+> - **6.2 Mejl/WA tekstovi → verovatno radi DUŠAN** (samo paziti na format linka, vidi 6.2).
+> - **6.3 Hyros parametri → 🔴 PRIORITET** (može biti prvo što se radi).
+> - **6.4 snimka gornji countdown → ✅ ODLUČENO: ističe ISTO kao ponuda (datum+4)**, bez izmene.
+> - **NOVO — VSL videi:** zameniti videe na `/snimka` i `/ponuda` (vturb player ID-evi u
+>   `<vturb-smartplayer id="...">` + odgovarajući `players/<ID>/v4/player.js` preload i loader skripta).
+> - **NOVO — „Zajedničko Polijetanje" brzi bonus UKLONJEN** sa `start.html` (frontend, jedini page koji
+>   ga je imao; ostao „AI Zaposlenik (prvih 50)"). ⚠️ **Zapier mejl (BRZI BONUSI sekcija) JOŠ ima taj
+>   bonus — ukloniti i tamo** za konzistentnost (inače fast kupci dobiju mejl sa bonusom kog nema na strani).
+> - **Sve proveriti PEDANTNO sa timom** — funnel je dignut na brzinu; proći svaku kariku end-to-end.
+
 ### 6.1 Make: mapiranje datuma u custom field  ← **BLOKER za follow-up linkove**
 - Custom field već napravljen: key **`evergreen_webinar_datum`** (Single line, na Contact).
 - Make `webinar_date` Set Variable (format `DD_MM_YY`, npr `30_06_26`; posle 19:45 → sutra) treba
