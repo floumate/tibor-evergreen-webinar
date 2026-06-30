@@ -108,6 +108,11 @@ Tok: **Stripe New Subscription → Filter (cena) → Code by Zapier (JS) → Gma
 
 ## 6. 🟡 ŠTA JOŠ TREBA (TODO — sledeća faza, follow-up posle webinara)
 
+> **PODELA POSLA (KO RADI ŠTA):** Ovaj handoff je za osobu koja **PREUZIMA projekat**.
+> - **Mejlove + WhatsApp poruke (tekstovi + `?datum=` linkovi) radi DUŠAN** (sekcija 6.2).
+> - **SVE OSTALO radi osoba koja čita ovaj doc** — Hyros (6.3, prioritet), VSL video swap,
+>   testiranje cele sekvence, security cleanup (6.5). Funnel je dignut na brzinu — proći SVE pedantno.
+>
 > **STATUS UPDATE (30.06.2026):**
 > - **6.1 Make mapiranje datuma → ✅ URAĐENO** (`webinar_date` → custom field `evergreen_webinar_datum`).
 > - **6.2 Mejl/WA tekstovi → verovatno radi DUŠAN** (samo paziti na format linka, vidi 6.2).
