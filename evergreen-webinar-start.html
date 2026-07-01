@@ -1184,8 +1184,7 @@
   var savedDatum = loadSavedDatum();
   var wbDay, fastBonusEnd, offerEnd;
   var redirectAfterFast = false;   // redirect tek POSLE brzih bonusa (kraj live prozora)
-  var redirectNow = null;          // odmah redirect na njihov datum (povratnik van prozora)
-  var forceExpired = false;        // prikazi "ponuda istekla" (nema pristup; popup/optin iskljuceni)
+  var redirectNow = null;          // odmah redirect na datum (sacuvani njihov, ili aktuelan webinar)
 
   if (datumParam) {
     // Param link je autoritativan: zakljucaj kao NJIHOV datum, idi pravo na 4-dnevnu ponudu.
@@ -1209,17 +1208,15 @@
       // Ima sacuvan datum -> na NJEGOV (validan = ponuda; istekao = "ponuda istekla").
       redirectNow = savedDatum;
     } else {
-      // Nema sacuvanog datuma i van live prozora -> prikazi "ponuda istekla" (bez optin redirecta, za sada).
-      wbDay = liveDay;
-      fastBonusEnd = 0;
-      forceExpired = true;
+      // Nema sacuvanog datuma, van live prozora -> redirect na AKTUELAN webinar (4-dnevna ponuda).
+      redirectNow = liveDay;
     }
   }
 
   // Povratnika odmah prebaci na njegov datum (bez cekanja na tajmer).
   if (redirectNow) { location.replace(location.pathname + "?datum=" + fmtDatum(redirectNow)); return; }
 
-  offerEnd = forceExpired ? 0 : belgradeEpoch(wbDay.y, wbDay.m, wbDay.d + 4, 23, 59, 59);
+  offerEnd = belgradeEpoch(wbDay.y, wbDay.m, wbDay.d + 4, 23, 59, 59);
 
   var daysEl = root.querySelector("[data-euo-days]");
   var hoursEl = root.querySelector("[data-euo-hours]");

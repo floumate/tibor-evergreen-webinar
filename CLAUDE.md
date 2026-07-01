@@ -123,6 +123,9 @@ Tok: **Stripe New Subscription → Filter (cena) → Code by Zapier (JS) → Gma
 > - **NOVO — „Zajedničko Polijetanje" brzi bonus UKLONJEN** sa `start.html` (frontend, jedini page koji
 >   ga je imao; ostao „AI Zaposlenik (prvih 50)"). ⚠️ **Zapier mejl (BRZI BONUSI sekcija) JOŠ ima taj
 >   bonus — ukloniti i tamo** za konzistentnost (inače fast kupci dobiju mejl sa bonusom kog nema na strani).
+> - **FIX (bare /start):** čist `/start` bez sačuvanog datuma, van 20:00-21:34, sada **redirectuje na
+>   `?datum=<aktuelan webinar>`** (4-dnevna ponuda), NE više „istekla". (Ranije je greškom stajao `forceExpired`.)
+>   „Ponuda istekla" se sad vidi SAMO za stvarno istekao datum (datum+4 prošlo).
 > - **Sve proveriti PEDANTNO sa timom** — funnel je dignut na brzinu; proći svaku kariku end-to-end.
 
 ### 6.1 Make: mapiranje datuma u custom field  ← **BLOKER za follow-up linkove**
